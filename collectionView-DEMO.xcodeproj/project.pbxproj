@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9216ADAB1C2CE0410077BAED /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADAA1C2CE0410077BAED /* Firebase.framework */; };
+		9216ADAF1C2CE1250077BAED /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADAD1C2CE1250077BAED /* libc++.1.dylib */; };
+		9216ADB01C2CE1250077BAED /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADAE1C2CE1250077BAED /* libicucore.A.dylib */; };
+		9216ADB21C2CE1410077BAED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADB11C2CE1410077BAED /* SystemConfiguration.framework */; };
+		9216ADB41C2CE1500077BAED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADB31C2CE1500077BAED /* CFNetwork.framework */; };
+		9216ADB61C2CE1600077BAED /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216ADB51C2CE1600077BAED /* Security.framework */; };
+		9216ADBB1C2D01A50077BAED /* ImportDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9216ADBA1C2D01A50077BAED /* ImportDataViewController.swift */; };
 		9278DAE71C2CB5DD00ABC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278DAE61C2CB5DD00ABC858 /* AppDelegate.swift */; };
 		9278DAE91C2CB5DD00ABC858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278DAE81C2CB5DD00ABC858 /* ViewController.swift */; };
 		9278DAEC1C2CB5DD00ABC858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9278DAEA1C2CB5DD00ABC858 /* Main.storyboard */; };
 		9278DAEE1C2CB5DD00ABC858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */; };
 		9278DAF11C2CB5DD00ABC858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9278DAEF1C2CB5DD00ABC858 /* LaunchScreen.storyboard */; };
+		9278DAF91C2CB88E00ABC858 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278DAF81C2CB88E00ABC858 /* CollectionViewCell.swift */; };
+		9278DAFB1C2CB8AA00ABC858 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278DAFA1C2CB8AA00ABC858 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9216ADAA1C2CE0410077BAED /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		9216ADAD1C2CE1250077BAED /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../libc++.1.dylib"; sourceTree = "<group>"; };
+		9216ADAE1C2CE1250077BAED /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../libicucore.A.dylib; sourceTree = "<group>"; };
+		9216ADB11C2CE1410077BAED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9216ADB31C2CE1500077BAED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9216ADB51C2CE1600077BAED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9216ADB71C2CE1800077BAED /* collectionView-DEMO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "collectionView-DEMO-Bridging-Header.h"; sourceTree = "<group>"; };
+		9216ADBA1C2D01A50077BAED /* ImportDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportDataViewController.swift; sourceTree = "<group>"; };
 		9278DAE31C2CB5DD00ABC858 /* collectionView-DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collectionView-DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9278DAE61C2CB5DD00ABC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9278DAE81C2CB5DD00ABC858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +39,8 @@
 		9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9278DAF01C2CB5DD00ABC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9278DAF21C2CB5DD00ABC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9278DAF81C2CB88E00ABC858 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9278DAFA1C2CB8AA00ABC858 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216ADB61C2CE1600077BAED /* Security.framework in Frameworks */,
+				9216ADB41C2CE1500077BAED /* CFNetwork.framework in Frameworks */,
+				9216ADB21C2CE1410077BAED /* SystemConfiguration.framework in Frameworks */,
+				9216ADAF1C2CE1250077BAED /* libc++.1.dylib in Frameworks */,
+				9216ADB01C2CE1250077BAED /* libicucore.A.dylib in Frameworks */,
+				9216ADAB1C2CE0410077BAED /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9216ADAC1C2CE0490077BAED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9216ADB51C2CE1600077BAED /* Security.framework */,
+				9216ADB31C2CE1500077BAED /* CFNetwork.framework */,
+				9216ADB11C2CE1410077BAED /* SystemConfiguration.framework */,
+				9216ADAD1C2CE1250077BAED /* libc++.1.dylib */,
+				9216ADAE1C2CE1250077BAED /* libicucore.A.dylib */,
+				9216ADAA1C2CE0410077BAED /* Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9278DADA1C2CB5DD00ABC858 = {
 			isa = PBXGroup;
 			children = (
 				9278DAE51C2CB5DD00ABC858 /* collectionView-DEMO */,
 				9278DAE41C2CB5DD00ABC858 /* Products */,
+				9216ADB71C2CE1800077BAED /* collectionView-DEMO-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,34 @@
 		9278DAE51C2CB5DD00ABC858 /* collectionView-DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				9278DAE61C2CB5DD00ABC858 /* AppDelegate.swift */,
-				9278DAE81C2CB5DD00ABC858 /* ViewController.swift */,
-				9278DAEA1C2CB5DD00ABC858 /* Main.storyboard */,
+				9216ADAC1C2CE0490077BAED /* Frameworks */,
 				9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */,
+				9278DAEA1C2CB5DD00ABC858 /* Main.storyboard */,
+				9278DAFD1C2CB8DA00ABC858 /* View Controllers */,
+				9278DAFC1C2CB8CA00ABC858 /* support Files */,
+			);
+			path = "collectionView-DEMO";
+			sourceTree = "<group>";
+		};
+		9278DAFC1C2CB8CA00ABC858 /* support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9278DAE61C2CB5DD00ABC858 /* AppDelegate.swift */,
 				9278DAEF1C2CB5DD00ABC858 /* LaunchScreen.storyboard */,
 				9278DAF21C2CB5DD00ABC858 /* Info.plist */,
 			);
-			path = "collectionView-DEMO";
+			name = "support Files";
+			sourceTree = "<group>";
+		};
+		9278DAFD1C2CB8DA00ABC858 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9278DAE81C2CB5DD00ABC858 /* ViewController.swift */,
+				9278DAF81C2CB88E00ABC858 /* CollectionViewCell.swift */,
+				9278DAFA1C2CB8AA00ABC858 /* NewViewController.swift */,
+				9216ADBA1C2D01A50077BAED /* ImportDataViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9278DAE91C2CB5DD00ABC858 /* ViewController.swift in Sources */,
+				9216ADBB1C2D01A50077BAED /* ImportDataViewController.swift in Sources */,
 				9278DAE71C2CB5DD00ABC858 /* AppDelegate.swift in Sources */,
+				9278DAF91C2CB88E00ABC858 /* CollectionViewCell.swift in Sources */,
+				9278DAFB1C2CB8AA00ABC858 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +310,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/collectionView-DEMO",
+				);
 				INFOPLIST_FILE = "collectionView-DEMO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "RydeHQ.collectionView-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "collectionView-DEMO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -259,10 +329,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/collectionView-DEMO",
+				);
 				INFOPLIST_FILE = "collectionView-DEMO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "RydeHQ.collectionView-DEMO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "collectionView-DEMO-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +362,7 @@
 				9278DAF71C2CB5DD00ABC858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
