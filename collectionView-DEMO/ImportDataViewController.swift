@@ -8,15 +8,19 @@
 import Foundation
 import UIKit
 
-//protocol ImportDataDelegate (){
-//    func imgImport(imgUrl:String)
-//}
+protocol ImportDataDelegate {
+//    optional func imgImport(imgUrl:String)
+    var dataUrl:String{get set}
+}
 
 class ImportDataViewController: UIViewController {
 
     @IBOutlet weak var fbProfileImage: UIImageView!
     
+//=================================================================//
+    //Required to Be Defined in whatever VC uses this Delegate
     var imgURL = "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-frc3/v/t1.0-9/10609411_10202833479538553_8901412256553337444_n.jpg?oh=84399efa7d9e5af0df43be53b47c64bc&oe=57138F1C"
+//=================================================================//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +52,6 @@ class ImportDataViewController: UIViewController {
                     print("Not a 200 response")
                     return
             }
-            
             // Read the JSON
             do {
                self.fbProfileImage.image = UIImage(data:data!)

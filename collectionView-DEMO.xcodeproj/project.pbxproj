@@ -23,6 +23,8 @@
 		9278DAFB1C2CB8AA00ABC858 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278DAFA1C2CB8AA00ABC858 /* NewViewController.swift */; };
 		92CB16161C2DFB9E00CA9C84 /* HTTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CB16151C2DFB9E00CA9C84 /* HTTPController.swift */; };
 		92CE9DC41C2DE58400A81195 /* FindBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE9DC31C2DE58400A81195 /* FindBeerViewController.swift */; };
+		92E126CF1C2F41040082FDF8 /* ShowDataImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E126CE1C2F41040082FDF8 /* ShowDataImportViewController.swift */; };
+		92E126D31C2F431B0082FDF8 /* DataImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E126D21C2F431B0082FDF8 /* DataImport.swift */; };
 		F73D07F0B15F291D9FF3DE84 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A6D02E95192E1B9DC271BA /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,13 +42,15 @@
 		9278DAE61C2CB5DD00ABC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9278DAE81C2CB5DD00ABC858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9278DAEB1C2CB5DD00ABC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "collectionView-DEMO/Assets.xcassets"; sourceTree = "<group>"; };
 		9278DAF01C2CB5DD00ABC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9278DAF21C2CB5DD00ABC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9278DAF81C2CB88E00ABC858 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9278DAFA1C2CB8AA00ABC858 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		92CB16151C2DFB9E00CA9C84 /* HTTPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPController.swift; sourceTree = "<group>"; };
 		92CE9DC31C2DE58400A81195 /* FindBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindBeerViewController.swift; sourceTree = "<group>"; };
+		92E126CE1C2F41040082FDF8 /* ShowDataImportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDataImportViewController.swift; sourceTree = "<group>"; };
+		92E126D21C2F431B0082FDF8 /* DataImport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImport.swift; sourceTree = "<group>"; };
 		A37960FACCF71A6CFB80D6AD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DCA0E413E021E005EDDCBA8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,7 @@
 		9278DADA1C2CB5DD00ABC858 = {
 			isa = PBXGroup;
 			children = (
+				9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */,
 				9278DAE51C2CB5DD00ABC858 /* collectionView-DEMO */,
 				9278DAFC1C2CB8CA00ABC858 /* support Files */,
 				9216ADAC1C2CE0490077BAED /* Frameworks */,
@@ -106,7 +111,6 @@
 		9278DAE51C2CB5DD00ABC858 /* collectionView-DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				9278DAED1C2CB5DD00ABC858 /* Assets.xcassets */,
 				9278DAEA1C2CB5DD00ABC858 /* Main.storyboard */,
 				9278DAFD1C2CB8DA00ABC858 /* View Controllers */,
 			);
@@ -128,8 +132,8 @@
 		9278DAFD1C2CB8DA00ABC858 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9216ADBA1C2D01A50077BAED /* ImportDataViewController.swift */,
-				92CB16151C2DFB9E00CA9C84 /* HTTPController.swift */,
+				92E126D01C2F410B0082FDF8 /* Data */,
+				92E126D11C2F41160082FDF8 /* Data Drafts */,
 				92CE9DC51C2DE71400A81195 /* Drafts */,
 			);
 			name = "View Controllers";
@@ -144,6 +148,24 @@
 				92CE9DC31C2DE58400A81195 /* FindBeerViewController.swift */,
 			);
 			name = Drafts;
+			sourceTree = "<group>";
+		};
+		92E126D01C2F410B0082FDF8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				92E126CE1C2F41040082FDF8 /* ShowDataImportViewController.swift */,
+				92E126D21C2F431B0082FDF8 /* DataImport.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		92E126D11C2F41160082FDF8 /* Data Drafts */ = {
+			isa = PBXGroup;
+			children = (
+				9216ADBA1C2D01A50077BAED /* ImportDataViewController.swift */,
+				92CB16151C2DFB9E00CA9C84 /* HTTPController.swift */,
+			);
+			name = "Data Drafts";
 			sourceTree = "<group>";
 		};
 		AEE4DE48D16A91C937687CCF /* Pods */ = {
@@ -279,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9278DAE91C2CB5DD00ABC858 /* ViewController.swift in Sources */,
+				92E126CF1C2F41040082FDF8 /* ShowDataImportViewController.swift in Sources */,
 				92CB16161C2DFB9E00CA9C84 /* HTTPController.swift in Sources */,
 				9216ADBB1C2D01A50077BAED /* ImportDataViewController.swift in Sources */,
+				92E126D31C2F431B0082FDF8 /* DataImport.swift in Sources */,
 				9278DAE71C2CB5DD00ABC858 /* AppDelegate.swift in Sources */,
 				9278DAF91C2CB88E00ABC858 /* CollectionViewCell.swift in Sources */,
 				9278DAFB1C2CB8AA00ABC858 /* NewViewController.swift in Sources */,
