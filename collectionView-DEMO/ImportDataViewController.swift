@@ -5,17 +5,23 @@
 //  Created by Jon Harlan on 12/24/15.
 //  Copyright © 2015 Jon Harlan. All rights reserved.
 //
-
+import Foundation
 import UIKit
+
+//protocol ImportDataDelegate (){
+//    func imgImport(imgUrl:String)
+//}
 
 class ImportDataViewController: UIViewController {
 
     @IBOutlet weak var fbProfileImage: UIImageView!
+    
+    var imgURL = "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-frc3/v/t1.0-9/10609411_10202833479538553_8901412256553337444_n.jpg?oh=84399efa7d9e5af0df43be53b47c64bc&oe=57138F1C"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-                load_image("https://scontent.xx.fbcdn.net/hprofile-xpf1/v/t1.0-1/p50x50/12341306_10102633254728324_6688774623411957066_n.jpg?oh=660c0b378f7d4ebb62244d63d4eef9c6&oe=571D5809")
-        // Do any additional setup after loading the view.
+//LOAD IMAGE via URL
+        imgImport(imgURL)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,16 +30,30 @@ class ImportDataViewController: UIViewController {
     }
     
 
-        func load_image(urlString:String) {
-            var imgURL: NSURL = NSURL(string: urlString)!
-            let request: NSURLRequest = NSURLRequest(URL: imgURL)
-            NSURLConnection.sendAsynchronousRequest(
-                request, queue: NSOperationQueue.mainQueue(),
-                completionHandler: {(response: NSURLResponse?,data: NSData?,error: NSError?) -> Void in
-                    if error == nil {
-                        self.fbProfileImage.image = UIImage(data: data!)
-                    }
-            })
-        }
+    
+    //MARK: - REST calls
+    // Sets IB-Outlet UIImage() from URL Input
+    func imgImport(imageUrl:String) {
+        
+        // Setup the session to make REST GET call.  Notice the URL is https NOT http!!
 
+        let session = NSURLSession.sharedSession()
+        let url = NSURL(string: imageUrl)!
+        
+        // Make the POST call and handle it in a completion handler
+        session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            // Make sure we get an OK response
+            guard let realResponse = response as? NSHTTPURLResponse where
+                realResponse.statusCode == 200 else {
+                    print("Not a 200 response")
+                    return
+            }
+            
+            // Read the JSON
+            do {
+               self.fbProfileImage.image = UIImage(data:data!)
+                print("image loaded")
+            }
+        }).resume()
+    }
 }

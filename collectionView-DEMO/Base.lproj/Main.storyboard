@@ -104,7 +104,7 @@
                                 <rect key="frame" x="90" y="158" width="420" height="283"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GmU-pu-jnA" firstAttribute="leading" secondItem="y54-ka-TMf" secondAttribute="leadingMargin" constant="70" id="E5T-DK-jaX"/>
                             <constraint firstItem="GmU-pu-jnA" firstAttribute="centerY" secondItem="y54-ka-TMf" secondAttribute="centerY" id="NZw-w7-8lM"/>
@@ -151,6 +151,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Aw-fu-cO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2135" y="695"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="Fpi-3D-aZx">
+            <objects>
+                <viewController id="n0V-8O-KkI" customClass="HTTPController" customModule="collectionView_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ag-Bn-bk0"/>
+                        <viewControllerLayoutGuide type="bottom" id="2K1-9a-4RA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xWQ-Du-cAw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTTP Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDl-OB-6Tk">
+                                <rect key="frame" x="20" y="271" width="560" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2K1-9a-4RA" firstAttribute="top" secondItem="fDl-OB-6Tk" secondAttribute="bottom" constant="290" id="20b-db-xyv"/>
+                            <constraint firstItem="fDl-OB-6Tk" firstAttribute="trailing" secondItem="xWQ-Du-cAw" secondAttribute="trailingMargin" id="XEC-ZG-DNA"/>
+                            <constraint firstItem="fDl-OB-6Tk" firstAttribute="top" secondItem="9ag-Bn-bk0" secondAttribute="bottom" constant="251" id="hGt-uC-l6i"/>
+                            <constraint firstItem="fDl-OB-6Tk" firstAttribute="leading" secondItem="xWQ-Du-cAw" secondAttribute="leadingMargin" id="uRg-l0-8RT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zg0-su-hsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343" y="1471"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4fQ-0q-kXj">
