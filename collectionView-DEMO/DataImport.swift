@@ -10,10 +10,13 @@ import UIKit
 
 protocol DataImportDelegate {
     var dataUrl:String {get}
+    var ImageView:UIImage{get}
+//    var dataReturn
     
 }
 
 class DataImport: NSObject {
+    var imgObjData:UIImage = UIImage()
     var delegate:DataImportDelegate?
     override init(){
         super.init()
@@ -21,22 +24,22 @@ class DataImport: NSObject {
     init(dataUrlString:String) {
         super.init()
     }
-    func fetchData(dataUrl:String){
+    func fetchData(dataUrl:String) -> UIImage {
             let session = NSURLSession.sharedSession()
             let url = NSURL(string: dataUrl)!
-        
+
             session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-                // Make sure we get an OK response
                 guard let realResponse = response as? NSHTTPURLResponse where
                     realResponse.statusCode == 200 else {
                         print("Not a 200 response")
                         return
                 }
                 do {
-//                    self.fbProfileImage.image = UIImage(data:data!)
+                    self.imgObjData = UIImage(data:data!)!
                     print("image loaded on the DataImportDelegate")
                 }
             }).resume()
+            return imgObjData
+            //can probably do some setting up Down here... prepare for seg, somehting'
         }
-    }
-
+}
